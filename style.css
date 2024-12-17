@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+body {
+    background: linear-gradient(#050002b3, #05000299), url('imgs/quizback2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.app {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 0;
+    border-radius: 5px;
+    padding: 30px;
+    color: #fff;
+}
+
+.app h1 {
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 25px;
+}
+
+.quiz {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.quiz h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#answercontainer {
+    padding-top: 30px;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    background: #fff;
+    border: 3px solid #fff;
+    color: #000;
+    transition: ease-out 0.5s;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+
+#nextbtn {
+    width: 40%;
+    padding: 15px;
+    margin: 15px auto 0;
+    display: block;
+    border-radius: 5px;
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: linear 0.5s;
+}
+
+#nextbtn:hover{
+    background: #fff;
+    border: 3px solid #fff;
+    color: #000;
+}
+
+.correct {
+    background-color: #059e05;
+    border: 3px solid #059e05;
+}
+
+.wrong {
+    background-color: #df0404;
+    border: 3px solid #df0404;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .app {
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto 0;
+    }
+    .app h1 {
+        font-size: 25px;
+    }
+    .quiz h2 {
+        font-size: 18px;
+        font-weight: 500;
+    } 
+}
+
+
